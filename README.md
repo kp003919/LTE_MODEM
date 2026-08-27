@@ -33,7 +33,6 @@ The firmware is structured into clear layers to ensure maintainability and scala
 - Modular design for easy porting
 
 # Project Structure
-<>
 LTE_MODEM/
 │
 ├── src/
@@ -47,7 +46,7 @@ LTE_MODEM/
 ├── include/              # Public headers
 ├── docs/                 # Architecture notes
 └── README.md
-<>
+
 # Supported Modem Operations
 - Initialize modem
 - Attach to network
