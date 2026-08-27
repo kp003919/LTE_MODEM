@@ -18,32 +18,22 @@ The firmware is structured into clear layers to ensure maintainability and scala
  - Hardware Layer — UART driver, modem power control
  - Parser Layer — RX buffer, line extraction, AT response classification
 - Command Layer — synchronous & asynchronous AT command handling
+- State Machine — attach, activate, connected, error states
+- URC Handler — network loss, incoming events, session changes
+- Application Layer — user‑level API for modem operations
 
-State Machine — attach, activate, connected, error states
+# Features
+- Event‑driven modem state machine
+- Non‑blocking UART RX parser
+- Command/response tracking
+- URC classification & dispatch
+- Network attach + registration flow
+- PDP context activation
+- Automatic reconnect logic
+- Modular design for easy porting
 
-URC Handler — network loss, incoming events, session changes
-
-Application Layer — user‑level API for modem operations
-
-🔧 Features
-Event‑driven modem state machine
-
-Non‑blocking UART RX parser
-
-Command/response tracking
-
-URC classification & dispatch
-
-Network attach + registration flow
-
-PDP context activation
-
-Automatic reconnect logic
-
-Modular design for easy porting
-
-📂 Project Structure
-Code
+# Project Structure
+%
 LTE_MODEM/
 │
 ├── src/
@@ -57,48 +47,30 @@ LTE_MODEM/
 ├── include/              # Public headers
 ├── docs/                 # Architecture notes
 └── README.md
-📡 Supported Modem Operations
-Initialize modem
+%
+# Supported Modem Operations
+- Initialize modem
+- Attach to network
+- Activate PDP context
+- Check signal quality
+- Handle URCs
+- Detect disconnects
+- Recover session
 
-Attach to network
-
-Activate PDP context
-
-Check signal quality
-
-Handle URCs
-
-Detect disconnects
-
-Recover session
-
-🧪 Testing
+# Testing
 The project includes:
 
-UART loopback tests
+- UART loopback tests
+- AT command simulation
+- State machine transition validation
+- URC injection tests
 
-AT command simulation
-
-State machine transition validation
-
-URC injection tests
-
-📘 Documentation
+# Documentation
 Detailed documentation is available in the docs/ folder:
 
-Architecture overview
+- Architecture overview
+- State machine diagrams
+- AT command flow
+- URC event mapping
+- Error handling strategy
 
-State machine diagrams
-
-AT command flow
-
-URC event mapping
-
-Error handling strategy
-
-🤝 Contributing
-Contributions are welcome.
-Please open an issue or submit a pull request.
-
-📜 License
-MIT License (or choose your preferred license).
