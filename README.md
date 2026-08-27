@@ -1,32 +1,23 @@
-📡 LTE_MODEM
+# LTE_MODEM
 Firmware implementation for an LTE modem, including AT command handling, UART communication, event‑driven state machine, URC processing, and network session management.
 
-🚀 Overview
+# Overview
 This project provides a modular and production‑ready firmware architecture for integrating an LTE modem into embedded systems.
 It focuses on robust communication, clean state transitions, and reliable network activation.
 
-The firmware handles:
+## The firmware handles:
+  - AT command execution 
+  - UART RX/TX communication
+  - URC (Unsolicited Result Code) processing
+  - Network attach & registration
+  - PDP context activation
+  - Error recovery & disconnect handling
 
-AT command execution
-
-UART RX/TX communication
-
-URC (Unsolicited Result Code) processing
-
-Network attach & registration
-
-PDP context activation
-
-Error recovery & disconnect handling
-
-🧱 Architecture
+# Architecture
 The firmware is structured into clear layers to ensure maintainability and scalability:
-
-Hardware Layer — UART driver, modem power control
-
-Parser Layer — RX buffer, line extraction, AT response classification
-
-Command Layer — synchronous & asynchronous AT command handling
+ - Hardware Layer — UART driver, modem power control
+ - Parser Layer — RX buffer, line extraction, AT response classification
+- Command Layer — synchronous & asynchronous AT command handling
 
 State Machine — attach, activate, connected, error states
 
