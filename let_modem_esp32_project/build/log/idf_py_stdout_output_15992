@@ -1,0 +1,95 @@
+Command: ninja all
+[1/18] Building C object esp-idf/app/CMakeFiles/__idf_app.dir/lte_app.c.obj
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/lte_app.c: In function 'app_main':
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/lte_app.c:105:16: warning: unused variable 'ev' [-Wunused-variable]
+  105 |     LteEvent_t ev;
+      |                ^~
+In file included from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:16,
+                 from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/lte_app.c:1:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h: At top level:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h:65:21: warning: 'g_sim_test' defined but not used [-Wunused-variable]
+   65 | static LteSimTest_t g_sim_test = LTE_SIM_TEST_SUCCESS_PATH;
+      |                     ^~~~~~~~~~
+[2/18] Building C object esp-idf/lte_test_harness/CMakeFiles/__idf_lte_test_harness.dir/lte_test_harness.c.obj
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_test_harness/lte_test_harness.c:265:13: warning: 'scenario_mqtt_sub_fail_then_success' defined but not used [-Wunused-function]
+  265 | static void scenario_mqtt_sub_fail_then_success(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_test_harness/lte_test_harness.c:240:13: warning: 'scenario_mqtt_connect_fail_then_success' defined but not used [-Wunused-function]
+  240 | static void scenario_mqtt_connect_fail_then_success(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_test_harness/lte_test_harness.c:215:13: warning: 'scenario_tcp_fail_then_success' defined but not used [-Wunused-function]
+  215 | static void scenario_tcp_fail_then_success(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_test_harness/lte_test_harness.c:189:13: warning: 'scenario_pdp_fail_then_success' defined but not used [-Wunused-function]
+  189 | static void scenario_pdp_fail_then_success(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_test_harness/lte_test_harness.c:160:13: warning: 'scenario_attach_fail_then_success' defined but not used [-Wunused-function]
+  160 | static void scenario_attach_fail_then_success(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_test_harness/lte_test_harness.c:105:13: warning: 'scenario_urc_fail_then_success' defined but not used [-Wunused-function]
+  105 | static void scenario_urc_fail_then_success(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:16,
+                 from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_test_harness/lte_test_harness.c:5:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h:65:21: warning: 'g_sim_test' defined but not used [-Wunused-variable]
+   65 | static LteSimTest_t g_sim_test = LTE_SIM_TEST_SUCCESS_PATH;
+      |                     ^~~~~~~~~~
+[3/18] Building C object esp-idf/comms/CMakeFiles/__idf_comms.dir/lte_mqtt.c.obj
+In file included from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/comms/include/lte_mqtt.h:5,
+                 from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/comms/lte_mqtt.c:9:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h:65:21: warning: 'g_sim_test' defined but not used [-Wunused-variable]
+   65 | static LteSimTest_t g_sim_test = LTE_SIM_TEST_SUCCESS_PATH;
+      |                     ^~~~~~~~~~
+[4/18] Building C object esp-idf/comms/CMakeFiles/__idf_comms.dir/lte_tcp.c.obj
+In file included from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/comms/include/lte_tcp.h:5,
+                 from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/comms/lte_tcp.c:9:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h:65:21: warning: 'g_sim_test' defined but not used [-Wunused-variable]
+   65 | static LteSimTest_t g_sim_test = LTE_SIM_TEST_SUCCESS_PATH;
+      |                     ^~~~~~~~~~
+[5/18] Building C object esp-idf/state_machine/CMakeFiles/__idf_state_machine.dir/lte_sm.c.obj
+In file included from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:16,
+                 from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:14:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h:65:21: warning: 'g_sim_test' defined but not used [-Wunused-variable]
+   65 | static LteSimTest_t g_sim_test = LTE_SIM_TEST_SUCCESS_PATH;
+      |                     ^~~~~~~~~~
+[6/18] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lte_main.c.obj
+In file included from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/driver/include/lte_driver.h:4,
+                 from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/main/lte_main.c:1:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h:65:21: warning: 'g_sim_test' defined but not used [-Wunused-variable]
+   65 | static LteSimTest_t g_sim_test = LTE_SIM_TEST_SUCCESS_PATH;
+      |                     ^~~~~~~~~~
+[7/18] Linking C static library esp-idf\state_machine\libstate_machine.a
+[8/18] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\great\Desktop\IoT_Dev_Role\Overra\let_modem_esp32_project\build\bootloader && C:\Users\great\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5280 bytes. 0x2d80 bytes (36%) free.
+[9/18] No install step for 'bootloader'
+[10/18] Linking C static library esp-idf\comms\libcomms.a
+[11/18] Completed 'bootloader'
+[12/18] Linking C static library esp-idf\app\libapp.a
+[13/18] Linking C static library esp-idf\lte_test_harness\liblte_test_harness.a
+[14/18] Linking C static library esp-idf\main\libmain.a
+[15/18] Generating esp-idf/esp_system/ld/sections.ld
+NOTE: C:/esp/v6.1/esp-idf/components/bt/host/nimble/Kconfig.in:1428: 
+BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value (only 'y' and
+'n' are allowed). Value is treated as 'n'.
+NOTE: C:/esp/v6.1/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 
+'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: C:/esp/v6.1/esp-idf/components/fatfs/Kconfig:245: FATFS_PRINT_FLOAT: 
+'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+Skipping linker fragment parsing, fragment files unchanged
+[16/18] Linking CXX executable lte_modem_project.elf
+FAILED: lte_modem_project.elf 
+C:\Windows\system32\cmd.exe /C "cd . && C:\Users\great\.espressif\tools\xtensa-esp-elf\esp-15.2.0_20251204\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe @"C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/toolchain/cxxflags" @"C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/toolchain/ldflags" -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32S3=0 -Wl,--Map=C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/lte_modem_project.map -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=error -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32s3.peripherals.ld -T esp32s3.rom.ld -T esp32s3.rom.api.ld -T esp32s3.rom.bt_funcs.ld -T esp32s3.rom.libgcc.ld -T esp32s3.rom.version.ld -T esp32s3.rom.ble_master.ld -T esp32s3.rom.ble_50.ld -T esp32s3.rom.ble_smp.ld -T esp32s3.rom.ble_dtm.ld -T esp32s3.rom.ble_test.ld -T esp32s3.rom.ble_scan.ld -T esp32s3.rom.libc.ld -T memory.ld -T sections.ld -T rom.wdt.ld -u include_esp_phy_override -T rom.regi2c.ld @CMakeFiles\lte_modem_project.elf.rsp -o lte_modem_project.elf && cd ."
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/state_machine/libstate_machine.a(lte_sm.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:21: multiple definition of `sm_boot_enabled'; esp-idf/app/libapp.a(lte_app.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:21: first defined here
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/state_machine/libstate_machine.a(lte_sm.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:22: multiple definition of `sm_attach_enabled'; esp-idf/app/libapp.a(lte_app.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:22: first defined here
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/state_machine/libstate_machine.a(lte_sm.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:20: multiple definition of `sm_forward_enabled'; esp-idf/app/libapp.a(lte_app.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:20: first defined here
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/comms/libcomms.a(lte_tcp.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:22: multiple definition of `sm_attach_enabled'; esp-idf/app/libapp.a(lte_app.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:22: first defined here
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/comms/libcomms.a(lte_tcp.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:21: multiple definition of `sm_boot_enabled'; esp-idf/app/libapp.a(lte_app.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:21: first defined here
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/comms/libcomms.a(lte_tcp.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:20: multiple definition of `sm_forward_enabled'; esp-idf/app/libapp.a(lte_app.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:20: first defined here
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/comms/libcomms.a(lte_mqtt.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:22: multiple definition of `sm_attach_enabled'; esp-idf/app/libapp.a(lte_app.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:22: first defined here
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/comms/libcomms.a(lte_mqtt.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:21: multiple definition of `sm_boot_enabled'; esp-idf/app/libapp.a(lte_app.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:21: first defined here
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/comms/libcomms.a(lte_mqtt.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:20: multiple definition of `sm_forward_enabled'; esp-idf/app/libapp.a(lte_app.c.obj):C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:20: first defined here
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

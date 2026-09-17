@@ -1,0 +1,6 @@
+"-specs=C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/bootloader/specs/picolibc.specs"
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+-fno-rtti

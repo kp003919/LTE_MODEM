@@ -1,4 +1,7 @@
 import socket
+# TCP server to communicate with the ESP32 modem over modem lte connection. 
+# This server listens for incoming connections from the modem and exchanges data.    
+
 
 HOST = "0.0.0.0"      # Listen on all interfaces
 PORT = 5000           # Must match SERVER_PORT in your firmware

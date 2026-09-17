@@ -1,12 +1,4 @@
-idf_component_register(
-    SRCS
-        "main/lte_main.c"
-        "lte_modem/lte_hw.c"
-        "lte_modem/lte_driver.c"
-        "lte_modem/lte_sm.c"
-        "lte_modem/lte_tcp.c"
-        "lte_modem/lte_mqtt.c"
-        "lte_modem/lte_app.c"
-    INCLUDE_DIRS
-        "lte_modem"
-)
+cmake_minimum_required(VERSION 3.5)
+
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(lte_modem_project)

@@ -1,0 +1,28 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\great\Desktop\IoT_Dev_Role\Overra\let_modem_esp32_project\build\bootloader && C:\Users\great\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5280 bytes. 0x2d80 bytes (36%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/app/CMakeFiles/__idf_app.dir/lte_app.c.obj
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/lte_app.c: In function 'app_main':
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/lte_app.c:105:16: warning: unused variable 'ev' [-Wunused-variable]
+  105 |     LteEvent_t ev;
+      |                ^~
+In file included from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:16,
+                 from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/lte_app.c:1:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h: At top level:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h:65:21: warning: 'g_sim_test' defined but not used [-Wunused-variable]
+   65 | static LteSimTest_t g_sim_test = LTE_SIM_TEST_SUCCESS_PATH;
+      |                     ^~~~~~~~~~
+[5/9] Linking C static library esp-idf\app\libapp.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+Skipping linker script generation, section names unchanged
+[7/9] Linking CXX executable lte_modem_project.elf
+FAILED: lte_modem_project.elf 
+C:\Windows\system32\cmd.exe /C "cd . && C:\Users\great\.espressif\tools\xtensa-esp-elf\esp-15.2.0_20251204\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe @"C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/toolchain/cxxflags" @"C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/toolchain/ldflags" -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32S3=0 -Wl,--Map=C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/lte_modem_project.map -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=error -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32s3.peripherals.ld -T esp32s3.rom.ld -T esp32s3.rom.api.ld -T esp32s3.rom.bt_funcs.ld -T esp32s3.rom.libgcc.ld -T esp32s3.rom.version.ld -T esp32s3.rom.ble_master.ld -T esp32s3.rom.ble_50.ld -T esp32s3.rom.ble_smp.ld -T esp32s3.rom.ble_dtm.ld -T esp32s3.rom.ble_test.ld -T esp32s3.rom.ble_scan.ld -T esp32s3.rom.libc.ld -T memory.ld -T sections.ld -T rom.wdt.ld -u include_esp_phy_override -T rom.regi2c.ld @CMakeFiles\lte_modem_project.elf.rsp -o lte_modem_project.elf && cd ."
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/state_machine/libstate_machine.a(lte_sm.c.obj):(.literal.handle_line_forward+0x0): undefined reference to `sm_boot_enabled'
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/state_machine/libstate_machine.a(lte_sm.c.obj):(.literal.lte_cmd_attach_handle+0x0): undefined reference to `sm_attach_enabled'
+C:/Users/great/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/state_machine/libstate_machine.a(lte_sm.c.obj):(.literal.lte_sm_forward_path+0x0): undefined reference to `sm_forward_enabled'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

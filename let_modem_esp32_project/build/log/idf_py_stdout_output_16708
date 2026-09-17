@@ -1,0 +1,114 @@
+Command: ninja all
+[1/11] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\great\Desktop\IoT_Dev_Role\Overra\let_modem_esp32_project\build\bootloader && C:\Users\great\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5280 bytes. 0x2d80 bytes (36%) free.
+[2/11] Building C object esp-idf/state_machine/CMakeFiles/__idf_state_machine.dir/lte_sm.c.obj
+FAILED: esp-idf/state_machine/CMakeFiles/__idf_state_machine.dir/lte_sm.c.obj 
+ccache C:\Users\great\.espressif\tools\xtensa-esp-elf\esp-15.2.0_20251204\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v6.1\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/config -IC:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include -IC:/esp/v6.1/esp-idf/components/esp_libc/platform_include -IC:/esp/v6.1/esp-idf/components/freertos/config/include -IC:/esp/v6.1/esp-idf/components/freertos/config/include/freertos -IC:/esp/v6.1/esp-idf/components/freertos/config/xtensa/include -IC:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/esp/v6.1/esp-idf/components/freertos/esp_additions/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc -IC:/esp/v6.1/esp-idf/components/esp_hw_support/ldo/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/debug_probe/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/etm/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/tuning_scheme_impl/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_intr/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/power_supply/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/modem/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc/esp32s3 -IC:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32s3/. -IC:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32s3/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32s3/. -IC:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32s3/include -IC:/esp/v6.1/esp-idf/components/heap/include -IC:/esp/v6.1/esp-idf/components/heap/tlsf -IC:/esp/v6.1/esp-idf/components/log/include -IC:/esp/v6.1/esp-idf/components/soc/include -IC:/esp/v6.1/esp-idf/components/soc/esp32s3 -IC:/esp/v6.1/esp-idf/components/soc/esp32s3/include -IC:/esp/v6.1/esp-idf/components/soc/esp32s3/register -IC:/esp/v6.1/esp-idf/components/hal/platform_port/include -IC:/esp/v6.1/esp-idf/components/hal/esp32s3/include -IC:/esp/v6.1/esp-idf/components/hal/include -IC:/esp/v6.1/esp-idf/components/esp_rom/include -IC:/esp/v6.1/esp-idf/components/esp_rom/esp32s3/include -IC:/esp/v6.1/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -IC:/esp/v6.1/esp-idf/components/esp_rom/esp32s3 -IC:/esp/v6.1/esp-idf/components/esp_common/include -IC:/esp/v6.1/esp-idf/components/esp_system/include -IC:/esp/v6.1/esp-idf/components/esp_system/port/soc -IC:/esp/v6.1/esp-idf/components/esp_system/port/include/private -IC:/esp/v6.1/esp-idf/components/esp_stdio/include -IC:/esp/v6.1/esp-idf/components/xtensa/esp32s3/include -IC:/esp/v6.1/esp-idf/components/xtensa/include -IC:/esp/v6.1/esp-idf/components/xtensa/deprecated_include -IC:/esp/v6.1/esp-idf/components/esp_hal_gpio/include -IC:/esp/v6.1/esp-idf/components/esp_hal_gpio/esp32s3/include -IC:/esp/v6.1/esp-idf/components/esp_hal_usb/include -IC:/esp/v6.1/esp-idf/components/esp_hal_usb/esp32s3/include -IC:/esp/v6.1/esp-idf/components/esp_hal_pmu/include -IC:/esp/v6.1/esp-idf/components/esp_hal_pmu/esp32s3/include -IC:/esp/v6.1/esp-idf/components/esp_hal_regi2c/include -IC:/esp/v6.1/esp-idf/components/esp_hal_regi2c/esp32s3/include -IC:/esp/v6.1/esp-idf/components/esp_hal_uart/include -IC:/esp/v6.1/esp-idf/components/esp_hal_uart/esp32s3/include -IC:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/include -IC:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/esp32s3/include -IC:/esp/v6.1/esp-idf/components/esp_hal_dma/include -IC:/esp/v6.1/esp-idf/components/esp_hal_dma/esp32s3/include -IC:/esp/v6.1/esp-idf/components/lwip/include -IC:/esp/v6.1/esp-idf/components/lwip/include/apps -IC:/esp/v6.1/esp-idf/components/lwip/lwip/src/include -IC:/esp/v6.1/esp-idf/components/lwip/port/include -IC:/esp/v6.1/esp-idf/components/lwip/port/freertos/include -IC:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include -IC:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/driver/include -IC:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include -IC:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/comms/include -IC:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/hardware/include -IC:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/include -IC:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_test_harness/include @"C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/build/toolchain/cflags" -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project=. -fmacro-prefix-map=C:/esp/v6.1/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu23 -Wno-old-style-declaration -fzero-init-padding-bits=all -fno-malloc-dce -MD -MT esp-idf/state_machine/CMakeFiles/__idf_state_machine.dir/lte_sm.c.obj -MF esp-idf\state_machine\CMakeFiles\__idf_state_machine.dir\lte_sm.c.obj.d -o esp-idf/state_machine/CMakeFiles/__idf_state_machine.dir/lte_sm.c.obj -c C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:103:8: error: unknown type name 'string'; did you mean 'stdin'?
+  103 | static string stateToString(LteSmState_t state) {
+      |        ^~~~~~
+      |        stdin
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c: In function 'stateToString':
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:105:34: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  105 |         case LTE_SM_IDLE: return "LTE_SM_IDLE";
+      |                                  ^~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:106:34: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  106 |         case LTE_SM_INIT: return "LTE_SM_INIT";
+      |                                  ^~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:107:38: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  107 |         case LTE_SM_POWER_ON: return "LTE_SM_POWER_ON";
+      |                                      ^~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:108:39: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  108 |         case LTE_SM_WAIT_BOOT: return "LTE_SM_WAIT_BOOT";
+      |                                       ^~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:109:39: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  109 |         case LTE_SM_CHECK_SIM: return "LTE_SM_CHECK_SIM";
+      |                                       ^~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:110:36: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  110 |         case LTE_SM_ATTACH: return "LTE_SM_ATTACH";
+      |                                    ^~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:111:33: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  111 |         case LTE_SM_PDP: return "LTE_SM_PDP";
+      |                                 ^~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:112:41: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  112 |         case LTE_SM_OPEN_SOCKET: return "LTE_SM_OPEN_SOCKET";
+      |                                         ^~~~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:113:42: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  113 |         case LTE_SM_MQTT_CONNECT: return "LTE_SM_MQTT_CONNECT";
+      |                                          ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:114:44: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  114 |         case LTE_SM_MQTT_SUBSCRIBE: return "LTE_SM_MQTT_SUBSCRIBE";
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:115:33: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  115 |         case LTE_SM_RUN: return "LTE_SM_RUN";
+      |                                 ^~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:116:14: error: 'REATTACH' undeclared (first use in this function)
+  116 |         case REATTACH: return "REATTACH";
+      |              ^~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:116:14: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:116:31: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  116 |         case REATTACH: return "REATTACH";
+      |                               ^~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:117:14: error: 'REPDP' undeclared (first use in this function)
+  117 |         case REPDP: return "REPDP";
+      |              ^~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:117:28: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  117 |         case REPDP: return "REPDP";
+      |                            ^~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:118:14: error: 'REOPEN_SOCKET' undeclared (first use in this function); did you mean 'LTE_SM_OPEN_SOCKET'?
+  118 |         case REOPEN_SOCKET: return "REOPEN_SOCKET";
+      |              ^~~~~~~~~~~~~
+      |              LTE_SM_OPEN_SOCKET
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:118:36: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  118 |         case REOPEN_SOCKET: return "REOPEN_SOCKET";
+      |                                    ^~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:119:14: error: 'MQTT_RECONNECT' undeclared (first use in this function); did you mean 'LTE_SM_MQTT_RECONNECT'?
+  119 |         case MQTT_RECONNECT: return "MQTT_RECONNECT";
+      |              ^~~~~~~~~~~~~~
+      |              LTE_SM_MQTT_RECONNECT
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:119:37: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  119 |         case MQTT_RECONNECT: return "MQTT_RECONNECT";
+      |                                     ^~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:120:14: error: 'MQTT_RESUBSCRIBE' undeclared (first use in this function); did you mean 'LTE_SM_MQTT_RESUBSCRIBE'?
+  120 |         case MQTT_RESUBSCRIBE: return "MQTT_RESUBSCRIBE";
+      |              ^~~~~~~~~~~~~~~~
+      |              LTE_SM_MQTT_RESUBSCRIBE
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:120:39: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  120 |         case MQTT_RESUBSCRIBE: return "MQTT_RESUBSCRIBE";
+      |                                       ^~~~~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:121:14: error: 'REBOOT_MODEM' undeclared (first use in this function); did you mean 'LTE_SM_REBOOT_MODEM'?
+  121 |         case REBOOT_MODEM: return "REBOOT_MODEM";
+      |              ^~~~~~~~~~~~
+      |              LTE_SM_REBOOT_MODEM
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:121:35: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  121 |         case REBOOT_MODEM: return "REBOOT_MODEM";
+      |                                   ^~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:122:35: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  122 |         case LTE_SM_ERROR: return "LTE_SM_ERROR";
+      |                                   ^~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:123:25: error: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  123 |         default: return "UNKNOWN_STATE";
+      |                         ^~~~~~~~~~~~~~~
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c: At top level:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:103:15: warning: 'stateToString' defined but not used [-Wunused-function]
+  103 | static string stateToString(LteSmState_t state) {
+      |               ^~~~~~~~~~~~~
+In file included from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:16,
+                 from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/lte_sm.c:14:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h:65:21: warning: 'g_sim_test' defined but not used [-Wunused-variable]
+   65 | static LteSimTest_t g_sim_test = LTE_SIM_TEST_SUCCESS_PATH;
+      |                     ^~~~~~~~~~
+[3/11] No install step for 'bootloader'
+[4/11] Building C object esp-idf/app/CMakeFiles/__idf_app.dir/lte_app.c.obj
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/lte_app.c: In function 'app_main':
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/lte_app.c:113:16: warning: unused variable 'ev' [-Wunused-variable]
+  113 |     LteEvent_t ev;
+      |                ^~
+In file included from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/state_machine/include/lte_sm.h:16,
+                 from C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/app/lte_app.c:1:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h: At top level:
+C:/Users/great/Desktop/IoT_Dev_Role/Overra/let_modem_esp32_project/components/lte_types/include/lte_types.h:65:21: warning: 'g_sim_test' defined but not used [-Wunused-variable]
+   65 | static LteSimTest_t g_sim_test = LTE_SIM_TEST_SUCCESS_PATH;
+      |                     ^~~~~~~~~~
+ninja: build stopped: subcommand failed.

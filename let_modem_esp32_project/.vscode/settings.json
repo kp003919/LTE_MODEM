@@ -1,0 +1,5 @@
+{
+    "idf.cmakeCompilerArgs": [
+        "-DLTE_TEST_MODE=1"
+    ]
+}
